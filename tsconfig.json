@@ -1,0 +1,15 @@
+{
+    "compilerOptions": {
+        "target": "es6", //baseado em qual Ecmascript ele vai gerar a compilação
+        "outDir": "app/js", // onde vai ser gerado os arquivos .js
+        "noEmitOnError": true, //não deixa gerar o .js se o .ts estiver com erro
+        "noImplicitAny": true, //não permite declarar um atributo/propriedade sem tipo
+        "removeComments": true, //remove os comentários do código, para não ir para produção
+        "module": "system", //indica qual vai ser o loader que vai carregar nossas classes js no html
+        "strictNullChecks": true, //null e undefined não fazem parte do domínio dos tipos
+        "experimentalDecorators": true // permite utilizar decorators
+    },
+    "include": [
+        "app/ts/**/*" //onde ele vai olhar os arquivos .ts para compilação
+    ]
+}
